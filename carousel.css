@@ -1,0 +1,364 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+overflow-x: hidden!important;
+  overflow-y: scroll;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  height: 100%;
+  width: 100%;
+
+}
+
+.logojumbotron {
+  float: right;
+  padding: 15px;
+}
+.bulbosjumbotron {
+  float: left;
+  padding: 15px;
+}
+.note{
+  font-size: 15px;
+  color:#3c9b3d;
+  line-height: 10px;
+}
+.verde{
+  color:#4cae4c;
+}
+
+.jumbotron{margin-top: 40px;}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus{background-color:#4cae4c; }
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-default { height: 66px;}
+
+.navbar-brand{padding:0; height: 48px;}
+
+.navbar-right li a{padding-right:10px;padding-left: 10px;}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { background-color: #f8f8f8;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{ color: #fff; background-color: #A3A5A7;}
+.navbar-default .watts{ background-color: white; margin-top: 1px;}
+   
+@media (max-width: 991px){
+  img.navbar-brand{width: 212px; height: 38px; margin-top: 14px;}
+}
+
+@media (min-width: 992px) { 
+ img.navbar-brand{margin-top: 10px;}
+ }
+
+@media (min-width: 767px){
+.navbar-nav.navbar-right:last-child {margin-right: 0px;}
+}
+
+
+@media (max-width: 768px){
+ .navbar-brand{ margin-left: 15px;}
+ ul.nav.navbar-nav.navbar-right.watts{display: none;}
+ img.navbar-brand{width: 212px; height: 38px; margin-top: 8px;}
+ .navbar-default { height: 51px;}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.nav.navbar-nav.navbar-right.arriba li a{ padding-right :6px; padding-left: 7px;}
+.nav.navbar-nav.navbar-right.arriba li a h5 { font-size: 13px!important;}
+.navbar-default { height: 65px;}
+ }
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+      margin-top: 51px;
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}  
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 0px;
+  }
+}
+
+.myButton {
+ /* -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;*/
+ /* background-color:transparent;*/
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+ /* border-radius:6px;*/
+ border:1px solid #398439;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  /*font-family:Arial;*/
+  font-size:17px;
+  font-weight:bold;
+  padding:11px 24px;
+  text-decoration:none;
+ /* text-shadow:0px 1px 0px #ffffff;*/
+}
+/*.myButton:hover {
+  background-color:transparent;
+}*/
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+/**************************************FOTOS******************************/
+
+.prod .fotos img{margin: 0 auto; display: block;}
+.prod .relacionados a, .prod .relacionados a:hover, .prod .relacionados a:active, .prod .relacionados a:visited{margin: 0 auto; display: block;}
+.bulbo-home{text-align: center;}
+
+.luz-relacionadas{margin-top: 25px; margin-bottom: 60px;}
+a{color:#4cae4c;}
+
+.prod p.sub{margin-top: -19px;}
+
+
+/**************************************TABS PRODCUTOS y TABLAS******************************/
+.prod{margin-top: 130px;}
+
+
+.dropdown-menu>li>a{text-align: left; padding-left: 20px;}
+
+.prod .nav li.active:after{ /*arrow added to downarrowdiv DIV*/
+top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #841318;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.prod .nav li.fria.active:after{ border-top-color:#2E76AB;}
+
+.tab-content{margin-bottom: 40px;}
+.prod .potencias{text-align: center; }
+.prod .potencias h2{font-size: 36px; display: block; border-top:#e7e7e7 1px solid; line-height: 3;}
+.prod .nav-tabs>li.calida.active>a, .nav-tabs>li.calida.active>a:hover, .nav-tabs>li.calida.active>a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #D42027;
+    border: 2px solid #ddd;
+    border-bottom-color: #ddd;
+    border: 2px solid #841318;  display: block;
+
+}
+
+.prod .nav-tabs>li.fria.active>a, .nav-tabs>li.fria.active>a:hover, .nav-tabs>li.fria.active>a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #6CA9D8;
+    border: 2px solid #ddd;
+    border-bottom-color: #ddd;
+    border: 2px solid #2E76AB;  display: block;
+
+}
+
+.prod .nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 2px solid transparent;
+    border-radius: 0;
+   color: #fff;
+}
+.prod .nav-tabs>li.calida>a{background-color: #D42027;}
+.prod .nav-tabs>li.fria>a{background-color: #6CA9D8;}
+.prod .nav-tabs {
+    border-bottom: 0px ;}
+
+.prod .nav-tabs>li.fria, .prod .nav-tabs>li.calida{min-width:110px; text-align: center; }
+.prod .nav-tabs>li.fria{margin-left: 7px;}
+
+.prod .col-primera{background-color: #E5E5E5; color: #5A5A5A; line-height: 3; text-transform: uppercase; text-align: center; font-weight: 700; border: 1px solid white;  }
+
+.prod .col-marcada{background-color: #4cae4c; color: #fff;line-height: 3; text-transform: uppercase; text-align: center; font-weight: 700;border: 1px solid white; }
+
+.prod .col-segunda{background-color: #9A9A9A; color: #fff; line-height: 3;  text-align: center; font-weight: 700; border: 1px solid white;  }
+
+
+.prod .tabla{margin-top: 15px; margin-bottom: 25px;}
+.prod .tabla p{padding: 0; margin:0;}
+.prod{margin-bottom: 20px;}
+
+/********************************MAPA*******************************************/
+
+
+
+ .locales .table>tbody>tr.success>td{background-color: #D7D7D7;}
+ .locales .table-hover>tbody>tr.success:hover>td{background-color: #e5e5e5;}
+
+ .locales .table>tbody>tr.info>td{background-color:#BEBEBE;}
+ .locales .table-hover>tbody>tr.info:hover>td{background-color: #e5e5e5;}
+
+
+ /*******************modal fotos********************************/
+.modal-header.fotogrande {
+    height: 16.43px;
+    border-bottom: 0;
+}
+
+.bulbo-home a{cursor: pointer;}
+
+/*****************BENEFICIOS*********************/
+@media (max-width: 767px) {
+
+.modelos .btn{padding-left: 0px;}
+.icon-chevron-right.primera{padding-right: 0px;}/*para5.5*/
+.icon-chevron-right.segunda{padding-right: 20px;}/* para 9*/
+.icon-chevron-right{padding-right: 10px;}
+.prod .potencias h2 {text-align: left;}
+.prod .relacionados a, .prod .relacionados a:hover, .prod .relacionados a:active, .prod .relacionados a:visited{text-align: left;}
+}
+
+
+
+/*LG*/
+@media (min-width: 1200px) {
+}
+/*MD*/
+@media (max-width: 1199px) {
+}
+/*SM*/
+@media (max-width: 991px) {
+}
+/*XS*/
+@media (max-width: 767px) {
+}
+/*MINI < 480*/
+@media (max-width: 480px) {
+}
+
